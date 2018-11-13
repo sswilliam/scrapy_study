@@ -1,0 +1,7 @@
+*.log
+/cache/
+cmds
+cookies.txt
+cookies.json
+*.pyc
+URL.py
