@@ -12,7 +12,7 @@ for dirname in os.listdir("cache"):
             print(dirname+" not  configured")
         else:
             # if os.path.exists()
-            if os.path.exist("cache/"+dirname+"/finish.txt"):
+            if os.path.exists("cache/"+dirname+"/finish.txt"):
                 continue
             with open(basic_json) as f:
                 basic_info = json.load(f)
