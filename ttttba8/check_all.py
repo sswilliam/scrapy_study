@@ -10,6 +10,7 @@ for dirname in os.listdir("cache"):
 
         if not os.path.exists(detailed_json):
             print(dirname+" not  configured")
+            # print("rm -rf \""+dirname+"\"")
         else:
             # if os.path.exists()
             if os.path.exists("cache/"+dirname+"/finish.txt"):
@@ -22,7 +23,8 @@ for dirname in os.listdir("cache"):
                 end_index = basic_info['cover'].find("&w=300")
                 cover_url = basic_info['cover'][start_index+4:end_index]
                 if os.path.exists("cache/"+dirname+"/cover.jpg"):
-                    print("cache/"+dirname+"/cover.jpg")
+                    # print("cache/"+dirname+"/cover.jpg")
+                    print("rm -rf \""+dirname+"\"")
                     cnt = cnt+1
                     # break
                 else:

@@ -1,5 +1,6 @@
 *.log
 /cache/
+/cache1/
 cmds
 cookies.txt
 cookies.json
